@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Plus, Search, Edit, Trash2, Download } from 'lucide-react';
-import JobModal from './modals/JobModal';
+import { Download, Edit, Plus, Search, Trash2 } from 'lucide-react';
+import { useState } from 'react';
 import { downloadJobsCSV } from '../utils/downloadUtils';
+import JobModal from './modals/JobModal';
 
 const Jobs = () => {
   const [jobs, setJobs] = useState([
@@ -9,7 +9,7 @@ const Jobs = () => {
       id: 1,
       project: 'E-commerce Website',
       projectId: 'PRJ001',
-      description: 'Modern e-commerce platform with payment integration',
+      description: 'Modern e-commerce platform with payment integration with full stack',
       projectValue: 250000,
       designers: 'Digital Solutions, Deep Test 1.2',
       frontend: 'React Developer',
